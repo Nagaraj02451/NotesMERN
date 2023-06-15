@@ -1,0 +1,602 @@
+	Dom
+
+Document => Html , xml 
+Object => tags (h1,img)
+Model => layout of html structure (div)
+
+W3c
+   Core
+   Html
+   Xml   (change the html css code)
+
+ * html element chenge object
+ * peoperties of html element(attributes)
+ * Method(action perform)
+ * events( move content)
+
+get, change, add, delete (html element Dom use) 
+
+API => middle were
+
+
+
+Document object Model
+   
+    Window 
+    Document
+    
+ Bom Browser object model
+
+        Screen  =>  Width and height
+        History  =>   back anf forward 
+        Navigation  =>  cookieEnabled ,appName , appCodeName , plateform , lag
+        location  =>  href , assign , path , host
+
+Window Object:
+        Alert
+        open
+        close
+        moveto
+        prompt
+        confirm
+        print
+
+document.all
+document.links
+document.images
+document.h1
+document.anchor   
+document.div
+
+Dom loaded events
+ document  :  DOMContentloaded
+ window    :  load
+               unload
+ window.onload function(){
+       .onunload
+        .onbeforeunload
+}
+
+(or)
+   format :
+         window.addEventListener("load",()=>{
+    
+         })
+
+async vs defer
+(link based work)  script   = tag
+
+
+
+Selectors
+
+
+document.getElementById    
+document.getElementsByClassName
+document.getElementsByTagName
+document.querySelector
+document.querySelectorAll   
+
+
+Javascript => ( Html-element-creating )
+
+CreateElement   (create a div and ( all(HTML)elements)    Arrayform (text print array format)
+
+
+TextContent
+InnerHTML
+innerText
+CreateTextNode   ("insert text content in html tags")
+
+
+Document fragment() => (' used for performance related ex : execute for speed 
+                          compare with normal time ')
+
+
+console.time("start")
+console.timeEnd("start")   (check wheather the execution time)
+
+
+insert Dom Element =>  Append  (last add)
+                       prepend (first add)
+                       before ( before start element)
+                       after (after complete elemant)
+
+
+insert element with string template = > 
+
+                       InsertAdjacentElement('afterbegin', " own content" )
+                                            ('afterend', " own content" )
+                                            ('beforebegin', " own content" )   
+                                            ('afterend', " own content" )  
+                       InsertAdjacentHTML   ('afterbegin', "<li> own content </li>" )
+                       insertAdjacentText   ('afterbegin', " just text only add" )
+
+replaceWith() =>  ('used to replace html element')
+
+
+remove()  => ('posible to remove html element')
+
+
+clonenode(true)  => (' clone (copy a another section) in same content ')
+    
+           Ex : let demo = document.getElementById("demo");
+                let tol =  demo.cloneNode(true);
+                console.log(tol.innerText);
+
+
+finding children element :
+           
+           childElementCount
+           children
+           childrenNode
+
+
+  Ex : let demo = document.getElementById("demo");
+
+
+    console.log(demo.childElementCount);
+
+
+ finding parent element :
+
+
+       parentElement
+       parentNode
+
+
+Sibling Element:
+       
+       nextSibling
+       nextElementSibling
+ 
+       previousElementSibling
+       previousSibling
+ 
+Element property & HTML Attributes
+
+       setattributes
+       getattributes
+       . notation
+       [] notation
+       hasattributes
+       removeattributes
+
+
+Javascript style : (Inline)
+
+       Set.attributes
+ex:
+    ro.setAttribute("style" ,"margin: 250px;")
+
+       CSS text
+ex: 
+    ro.style.cssText = "color : red ";
+
+       direct style
+
+ex : 
+ 
+     ro.style.color = "red";
+
+
+
+Class Style in Dom
+
+       ClassName
+       Setattributes
+       Classlist
+            add
+            remove
+            tagle
+            replace
+
+Event listener  and event
+
+          1 . <button onclick="fun()">click</button>    (inline)
+
+          2 .  document.addEventListener("click",()=>{
+
+               })                                      (parralal add by function) 
+
+ex :
+    
+let ro = document.getElementById("rolex");
+
+ro.addEventListener("click", ()=>{
+    alert("surya");
+})
+
+          3.  ro.onclick = ()=>{
+              alert("surya");
+              }
+
+          4.  let ro = document.getElementById("rolex");
+
+              ro.setAttribute("onclick" , "alert('surya')")
+
+
+5 . let ro = document.getElementById("rolex");
+
+    let surya = ()=>{
+    alert("surya");
+
+    }
+
+    ro.addEventListener("click", surya)
+
+6 .  ro.onclick = surya;   (funnction)
+
+
+
+Remove Event listener
+           
+   ketword : removeeventlistener
+
+      let ro = document.getElementById("rolex");
+
+      let surya = ()=>{
+      alert("surya");
+
+      }
+
+      ro.addEventListener("click" , surya);
+      ro.removeEventListener("click" , surya);
+
+
+
+Event capturing  , Bubbling
+
+
+      structure
+         
+         capturing
+         target
+         bubbling
+         "v" Shape structure
+
+event.stopPropagation();
+event.stopImmediatePropagation;
+
+
+Settimeout
+setintervel
+
+cleartimeout
+cleartimeout
+
+syn and asyn process (javascript is a syn process => setintervel and settimeout used to change 
+
+                                                     asyn process of javascript);
+
+
+Prevention (browser default action)
+
+        event.preventDefault
+        event.defaultPrevented
+
+Event Delegation
+ 
+         parent node behave with click function to all child node
+this is called event delegation
+    
+         ex :
+             let demo = document.querySelector("#demo");
+
+             demo.addEventListener("click" , (event)=>{
+     
+            console.log(event.target.innerText);
+     .
+            });
+
+
+
+Mouse events :
+ 
+          mouse click used to build a task
+
+              Mousedown
+              mouseup
+              mouseenter
+              mousemove
+              mouseleave
+              mouseout
+              mouseover
+Ex:
+
+   document.addEventListener("mouseup", ()=>{
+
+
+    console.log("surya");
+
+    } )
+
+Keyboard event
+
+          keydown
+          keyup
+
+Ex: 
+    document.addEventListener("keyup", ()=>{
+
+
+    console.log("surya");
+
+    } )
+     
+
+
+localStorage.setItem("user" , sname);        (permanent storage)
+localStorage.getItem("user");
+
+sessionStorage.setItem("user" , sname);       (temporary storage)
+sessionStorage.getItem("user")
+
+Ex:
+
+let iop = document.getElementById("iop");
+
+let pop = document.getElementById("pop");
+
+pop.onclick = function(){
+ 
+    total();
+
+};
+
+let total = ()=>{
+
+    let name = "surya";
+    localStorage.setItem("ini" , name);
+    iop.innerHTML =`Hi ... ${name}`;
+
+    if(!localStorage.getItem("ini")){
+        total();
+    }
+    else {
+        localStorage.getItem("ini")
+        iop.innerHTML =`Hi ... ${name}`;
+        
+    }
+
+}
+
+
+
+Form and element selection by document method
+
+
+    Ex :
+       
+       let total = document.forms.surya;
+
+       console.log(total);
+
+ Ex : Another
+
+let totalForm = document.forms.surya;
+
+
+  // let total = new FormData(totalForm);
+
+let {text1 ,text2} =  totalForm.elements;
+
+console.log(text1 ,text2);
+
+
+
+
+Formdata()
+
+ Ex:
+   let totalForm = document.forms.surya;
+
+
+   let total = new FormData(totalForm);
+
+   console.log([...total]);
+
+
+(Form a collection in form element )
+
+
+
+Transfer date to server
+ 
+Query string
+    new Urlsearchporos
+    map method
+json
+   new objectfromentities(formdata)
+
+   json stringift (new objectfromentities(formdata))
+
+
+
+Ajex :
+
+Server behavior 
+
+    new XMLHttpRequest()    (throw a Error msg default)
+    fetch
+
+Ex : 
+   function fun(){
+
+    let surya  = new XMLHttpRequest();
+
+    surya.onload = function(){
+    
+    if(this.status === 200 && this.readyState === 4){
+
+    document.getElementById("demo").innerHTML = this.responseText
+
+    }
+    else{
+    document.getElementById("demo").innerHTML = "Error"
+
+    }
+
+   };
+
+
+    surya.open("GET" , 'http://127.0.0.1:5501/new.html');
+    surya.send()
+
+}
+
+
+Handling input events:
+  
+
+    input(attributes);
+        
+              let totalForm = document.forms.surya;
+
+             let total = totalForm.elements.text1;
+
+     // Attributes
+     console.log(total.value);
+     console.log(total.readonly);
+     console.log(total.disable);
+
+  input Events:
+  
+     total.addEventListener("focus" , ()=>{
+     console.log(focus);
+     })
+     total.addEventListener("blur" , ()=>{
+     console.log(blur);
+     })  
+     total.addEventListener("input" , (e)=>{
+     document.getElementById("demo").innerHTML =`Hi : ${e.target.value}` ;
+
+      })
+      total.addEventListener("charge" , (e)=>{
+     console.log(e.target.value);
+
+      })
+
+other events :
+
+  total.addEventListener("cut" , (e)=>{
+    console.log(e.target.value);
+  
+    })
+    total.addEventListener("copy" , (e)=>{
+      console.log(e.target.value);
+    
+      })
+      total.addEventListener("past" , (e)=>{
+        console.log(e.target.value);
+      
+        })
+
+
+methods :
+
+total . focus()
+total . blur()
+
+
+
+Callback :  passed as an argument to another function
+            call another function
+            run after another function has finished  
+   
+let surya = (val , callo)=>{
+   return callo(val + 10);
+}
+
+let callo = (ret)=>{
+    
+  console.log(ret);
+
+}
+
+
+surya(1 , callo)
+
+Asynchronous :
+    Settimeout
+    Setintervel
+
+
+Promises:
+
+   A Promise is a JavaScript object that links producing code and consuming code
+
+
+
+// let prob =  new Promise(function(resolve , reject){
+//   setTimeout(function(){
+//    resolve("sucess")
+//   } , 1000);
+// })
+// prob.then(console.log)
+
+
+// let prob1 = new Promise(function(resolve , reject){
+//   setTimeout(function(){
+//     reject("Error")
+//   } , 500);
+// })
+// prob1.then(console.log).catch(console.log);
+
+// Promise.race([prob,prob1]).then(console.log).catch(console.log);
+
+
+Methods:
+  all
+  allsetted
+  race
+
+
+
+
+
+
+
+
+
+
+            
+       
+     
+
+
+       
+
+
+
+
+      
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

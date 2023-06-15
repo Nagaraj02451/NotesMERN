@@ -1,0 +1,359 @@
+Python
+  python is a interpreted , object oriented, high level programming language
+  1980s guido van rossum
+  
+Execute keyword
+  print(c)
+print(type(c))   => type of datatypes
+print(id(c))     => unique id
+
+import keyword
+   print(keyword.kwlist)     => display all inbuild keywords
+
+
+name = input()         /string
+print(name)
+
+add//
+name = int(input())    /integer
+
+name = float(input())  /float
+
+name , name1 , name2 = input().split(",")
+
+print(name)
+print(name1)
+print(name2)
+
+a = """ jfgduhjgwbdakjhlgwbdajcgjbwk """    //multi line string
+
+list
+ p = []
+print(type(p))
+
+print(",".join(p))
+
+
+print("Enter a para")   ///Multi line input
+
+while True:
+line = input()
+if line:
+  p.append(line)
+else:
+break
+print(p)
+
+
+
+String
+
+s = "Surya"
+print(s)
+print(s.upper())
+print(s.lower())
+print(s.capitalize())
+print(s.title())
+print(s.count("u"))
+s.endswith("a")
+s.find("o")
+s.replace("" , "")
+s.isupper()
+s.lower()
+s.isalnum()
+
+s.splitlines()
+
+len(s)
+len(s.strip())
+len(s.lstrip())
+len(s.rstrip())
+
+s.partition("-")
+
+
+string manipulation
+s = "Surya"
+print(s)
+print(s[0:2]   // su
+print(s[::-1])  // reverse
+
+Maths operation  arith ,logic , comparision
+
+loop
+
+i = 2
+while i <= 20:
+    print(i)
+    i += 2
+
+if i%2==0:
+  i=i+1
+   continue;
+
+break statement
+   if i%2==0:
+  i=i+1
+break
+
+
+Range
+  
+  print(list(range(5))    // 0 , 1 , 2 , 3 , 4
+
+  print(list(range(0 , 21 , 2))
+
+for i in range(20):
+print(i)
+
+
+list []
+
+ a.clear()
+ a.copy()
+ a.len()
+ a.min()
+ a.max()
+ a.pop()
+ a.remove()
+ a.count()
+ a.index()
+
+
+a.append()
+a.extend()   //two array connection
+a.insert(0 . "Surya")
+print(list(range(5))
+a.sort()
+a.sort(reverse = True)
+a.sort(key=len)
+
+
+
+Tuples   ()
+
+  same to list
+ 
+
+Set {}
+
+  a.add()
+
+  2 join used to a.update(b)
+
+  a.remove()
+  a.discard()
+  a.pop()
+  a.clear()
+  
+a.union(b)
+a.intersection(b)
+a.intersection_update(b)
+
+a.symmetric_difference(b)   common reject remainning print
+
+a.isdisjoint(b)   continous number
+
+a.issubset(b)   same value appear on the both set
+
+ a.issuperset(b)
+
+
+
+dictionaries / function
+
+  a = {
+"Name" : "Surya"
+}
+
+identical operator
+
+is 
+isnot
+
+
+Membership operator
+
+in
+notin
+
+
+function //
+
+def surya():
+
+surya()
+
+
+no return without argm
+no return ewith arg
+return withou arg
+return with arg
+arbirary arg function
+
+   ex : def class(*student):
+         print(student)
+
+          class(542,5,685,65,54)
+
+keyword arg function
+ 
+    ex : 
+      def surya(name):
+    print(name)
+
+    surya(name = "surya")
+
+
+Arbitrary keyword arg
+
+  ex : 
+    def surya(**data):
+
+     print(data)
+    
+    surya(name = "data" , age = "Karthick)
+
+
+default parameter
+
+
+passing a list argn function
+
+   ex: 
+     def total(marks):
+      return sum(marks)
+
+total([1 , 542 , 56 , 6500])
+
+
+
+recursive function
+
+    def facrotial(x):
+     if(x == 1:
+     return 1
+    else:
+       return(x* factorial(x-1))
+print(factorial(5))
+
+
+
+lambda function  
+
+   c= lambda a : a+50
+
+   print(c(5))
+
+
+
+data and time python
+
+
+import datatime as dt
+
+    print(dt.data.today())
+
+    new = dt.dtate(2021,10,20)
+      print(new)     constructor new
+
+   new.year
+   new.month
+   new.minute
+
+
+Math
+ import math
+ math.sqrt()
+math.ceil()
+math.floor()
+math.factorial(5)
+math.fabs()
+math.pow()
+math.log2(2)
+math.log10(2)
+math.pi
+math.e
+
+
+try block in python
+ 
+Ex:
+
+try:
+  a= 10/0
+except Exception as e:
+print(e)
+
+
+try else block in python
+
+  
+Ex:
+  
+try:
+  a= 10/25
+except Exception as e:
+print(e)
+else:
+print(a)
+
+
+finally block
+    
+Ex:
+ 
+ try:
+  a= 10/25
+except Exception as e:
+print(e)
+else:
+print(a)
+finally:
+print("thank")
+
+
+types os exception
+
+   print(dir(locals()['__builtins__']))
+
+
+
+NameError
+ZeroDivisionError
+
+   Ex : 
+try:
+print(10/0)
+except ZeroDivisionError as e:
+print("ZeroDivisionError")
+
+
+ValueError
+    int
+
+indexError
+
+FilenotfoundError
+
+
+python oops
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

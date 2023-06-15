@@ -1,0 +1,183 @@
+Node - js
+
+Mongo - DB
+
+insertOne    ({"Name": "Surya"})
+insertMany   ([{"Name" : "Deepak"} ,{"Name" : "Delvin"}])
+updateOne    ({"Name" :"Surya"} ,{$set:{"Name" : "SuryaKumar"}})
+updateMany   ({} ,{$set:{"Age" :25}})
+findOne      db.Collection.findOne()
+limit        db.Collection.find().limit(2)
+skip         db.Collection.find().skip(1) 
+sort         ({Name:1})
+deleteOne    ({Name:"Surya"})
+deleteMany    
+update        ({} , {$set:{phone:33} , {multi:true}}
+              ({} ,{$unset:{phone:2}} , {upsexrt:false , multi:true}}
+
+find({Name:"Surya"})
+findOne  ""
+
+find({} ,{name : 1 , id : 0})   find only name
+
+find({} ,{name : 1 , id : 0 , is : true})   add by iteam 
+
+Comparision operators :
+
+find({salary :{$gt : 200})   greater then or equal to    gte  lte  (greater then equal and less then equal))
+                lt           lessthen or equal to
+find({email : {$eq : "emaildata"}})   equal
+                ne                     notequal
+
+find({age :{$in :[28 ,22,32]}})
+	
+logical operators :
+
+find({$and : [{email :{$eq : "Surya@gmail"}} ,{age :{$eq : 25}}}]
+
+find({$or : [{name :{$eq :""} , {email : {$eq : ""}}]}
+
+Evalution operator :
+
+find({name :{$regex :"^j" , $options : "i"}})
+
+find({$where :function(){return this.name =="Surya"}})
+
+find().toArray()   large data handler
+forEach(()=>{print()})
+
+$text    find( { $text: { $search: "coffee" } } )
+
+Build in modeules / core modules
+
+
+FS : WriteFile     (OverWrite)
+     Appendfile    (Add)
+     readfile      (print log)
+     unlink     => (Delete a File)
+
+const fs = require('fs')
+
+fs.writeFileSync("index.txt" , "Surya is a good boy" , (err)=>{
+    if(err) throw err
+    else{
+        console.log("Created");
+    }
+})
+
+fs.appendFile("index.txt" , "Surya is a good boy" , (err)=>{
+    if(err) throw err
+    else{
+        console.log("Created");
+    }
+})
+
+fs.readFile("index.txt" ,  (err , data)=>{
+    if(err) throw err
+    else{
+        console.log(data.toString());
+    }
+})
+
+fs.unlink("index.txt" ,  (err , data)=>{
+    if(err) throw err
+    else{
+        console.log("Deleted");
+    }
+})
+
+Os: Freemem
+    arch
+    plateform
+    name
+
+http
+https
+
+path
+
+
+third party module
+
+Express     Instent obj (express() with variable)
+lodash
+yargs
+nodeman
+body-parser
+path
+jwt
+bcrypt
+cookies
+error handler
+dotenv
+mongoose
+multer
+pug         =>  #{name}
+                block content    extends layouts/main.pug
+                     each data in  datas
+                     #{name}
+
+ejs         =>  <%- include('new/header') %>
+                <p><%=file %></p>
+                      <% forEach.cource %>
+
+handlebar   =>  add.engine('hbs' , engine({extname : '.hbs' , defaultLayout :false  }))
+                add.set("view engine" , "hbs")
+                {{Data}}
+                        {{#each datas}}
+                            {{this}}
+                        {{/each}}
+                {{{body}}}
+                   page404 : true   if else concept 
+ 
+create read update delete  => express
+
+crud operation :
+
+put   - update
+get   - view
+post   - create
+delete  - delete
+
+Tuto : node ins  /
+       why       /
+       fs , os   / 
+       http , https    req res   req.url req.method  req.header  res.setheader res.write res.end    /
+       stream , buffer    buffer.concate().tostring()     /
+       res.on("data")     /
+       res.on("end")      /
+       single thread      /
+       link another js   module.exports = { }  require    /
+       lodash  third part module     / 
+       yargs   collect a list index.js list  yargs.argv   process.argv    /
+       Nodemon  automatic execution    / 
+       debugging   / 
+       Async await  from event loop and event drivent     /
+       express   /
+       add.use(express.static('public'))   middle war     /
+       ejs    add a ejs file    app.use('vie engine' , 'ejs')   views folder    /
+       <%- include('new/html') %>     /
+       <%= title >   /
+       Url params   req.params.id      /
+       Errors : Syntax , logical , run time error     /
+  
+       Another routes 
+       express.routes    add.use(routes)      /
+
+       insert Html page  sendfile(Path.join(--dirname , ../ , views , f.html))    
+
+       css insert  : add.use(path.join(--dirname , ('public'))
+                                         or
+                     app.use(express.static(path.join(__dirname , "public")))
+
+                 
+       seperate path : path.dirname(require.main.filename)
+       
+       
+       
+       
+
+
+
+
+

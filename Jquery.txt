@@ -1,0 +1,174 @@
+Selectors
+   # id selector
+   . id selector
+   *
+           Ex : 
+               $(document).ready(function(){
+               $("button").click (function(){
+               $("h1").hide()
+               })
+               })
+
+Events
+  focus()
+  blur()
+  change()
+  click()
+  dbclick()
+  hover()   
+
+  focusin()
+  focusout()
+  on()
+  off()
+  one()
+
+  ready()
+  resize()
+  scroll()
+  select()
+  submit()
+
+  mousedown()
+  mouseup()
+  mouseleave()
+  mouseenter()
+  mouseout()
+  mouseover()
+  mousemove()
+
+  keydown()
+  keyup()
+  keypress()
+
+  event.delegateTarget
+  event.preventDefault
+  event.pageX and event.pageY
+  
+  event.timeStamp
+  event.type
+  event.which   //Askeyvalue
+
+  triggerHandler()
+  $.proxy()
+  
+
+jQuery Effects
+
+    hide()
+    show()
+    toggle()
+
+    fadeIn()
+    fadeOut()
+    fadeToggle()
+    fadeTo()
+
+    slidedown()
+    slideup()
+    slideToggle()
+   
+    Animate()
+    
+    stop()
+    callback()
+    
+    chaining()
+    
+
+jQuery HTML
+
+    text()
+    html()
+    val()
+    attr()
+    
+
+    append()
+    prepend()
+    before()
+    after()
+
+    remove()
+    empty()
+
+    addclass()
+    removeclass()
+    toggleclass()
+
+    css()
+
+Document and window
+   
+    height()
+    width()
+    innerheight()
+    innerwidth()
+    outerheight()
+    outerwidth()
+
+
+Jquery traversing
+  
+    parent()
+    parents()
+    parentuntil("Mension what pareent u want")
+
+    children()
+    find()
+
+    siblings()
+    next()
+    nextAll()
+    nextuntil()
+    prev()
+    preAll()
+    prevuntill()
+
+    first()
+    last()
+    eq()
+    filter()
+    not()
+     
+
+Jquery Miscellaneous
+
+    data()
+    removeData()
+    each()
+    toArray()
+    $.noConflict()
+    $.param() 
+    get()
+    index()
+
+
+Search keys code : 
+
+     $(document).ready(function(){
+        $("#i").on("keyup" , function(){
+              let value = $(this).val().toLowerCase();
+                $("#body li ").filter(function(){
+                         $(this).toggle($(this).text().toLowerCase(),indexOf(value) > -1 ;
+
+     }
+        }
+
+           }
+
+
+Ajex methord
+
+
+
+
+
+
+    
+
+
+
+
+  
+

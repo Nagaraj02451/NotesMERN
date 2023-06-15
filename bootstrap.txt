@@ -1,0 +1,119 @@
+LAYOUTS : 
+
+Breakpoints
+
+Breakpoint 	  Class infix     	Dimensions
+X-Small 	      None        	 <576px
+Small 	      sm 	             ≥576px
+Medium 	      md 	             ≥768px
+Large 	      lg 	             ≥992px
+Extra large 	xl           	 ≥1200px
+Extra extra lar   xxl 	             ≥1400px
+
+
+Container
+Container-fluid
+
+
+Grid
+   12 col page is maintain
+   Row , col    
+  justify-content-start
+  justify-content-end
+  justify-content-around
+  justify-content-between
+  justify-content-evenly
+
+Gutters
+   gx-5
+   gy-5   space between col and row
+   g x, y both (global)
+
+CONTENT:
+
+Reboot
+ 
+Typography
+  h1 classname
+  display
+  lead
+  list-unstyled
+       list-inline
+           list-inline-item
+
+Image
+  Image thumbnails
+  img-fluid
+
+table
+  table-success
+
+Figure 
+  figure-img img-fluid rounded
+
+
+FORMS : 
+
+   Form-control
+   form-select
+   form-check
+   form-label
+
+
+
+COMPONENTS :
+   
+   Accordion  used to (heading with content)
+   Alerts
+   Badges
+   Breadcrumb
+   Buttons
+   Button group
+   card
+   Carousel
+   Close button
+   Collapse(toggle)  button with content
+   Dropdowns
+   List group
+   Modal    
+   Navs and tabs
+   Navbar
+   Offcanvas(build hidden navbar side navbar)
+   Pagination
+   Popovers(hover)
+   Progress  limits
+   Scrollspy   (automatically change route)
+   Spinners(page load rouderd)
+   Toasts(alert on window bottom)
+   Tooltips (hover content)
+   
+
+HELPERS :
+    
+    Clearfix  (div float)
+    Colored links
+    Ratios(hanling videos)
+    position
+    Visually hidden
+    Stretched link(nested link)
+    Text truncation
+
+UTILITIES :
+   
+    Border
+    display
+    flex
+    float
+    
+
+
+ 
+
+
+
+
+
+
+
+  
+

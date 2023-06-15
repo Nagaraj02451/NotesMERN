@@ -1,0 +1,247 @@
+1. Variables : Var, let , const 
+          var : old ;           function scope  other wise global scope
+          let : current         chance to change the value(overwrite)
+          const : fixed value   let and const are scope specific
+ 
+
+* Function 
+
+     1 .  Declaration
+
+               Function Surya(){
+                
+               };
+               Surya();
+
+     2 .  Expression                             Named Function
+
+              let surya =  Function (){          let surya = function surya(){
+                 
+               };                                };
+               surya();                          surya();
+
+     3 .  Arrow function (anonimous function)
+
+               let surya = Surya() =>{
+                
+               };
+               Surya();
+Ex:
+
+let num = 10;
+
+function total(){
+        let msg = num % 2 ==0;
+
+        console.log(msg);
+};
+
+total();
+
+  * Array []
+      
+
+       let surya = [];
+           surya[0];
+     ex :
+        
+let surya = [10,20,20,30];
+
+  surya.push(50);
+  surya.unshift(0);
+  surya.splice(2, 0 , 100)
+
+  surya.pop();
+  surya.shift();
+  surya.splice(2,1)
+
+
+
+console.log(surya.indexOf(20));
+console.log(surya.includes(20));
+
+*Indexof
+*Includes
+
+
+* find        (Fuction - Call oh function)
+* every
+* Some
+* fill
+* Filter
+* Math
+* map
+* Object.key         (For of)
+* Object.entities
+* Object.assign
+* Concate (...)spread operator
+* slice
+* Repeat
+* reduce
+
+Condition :
+
+       1 . If (){
+ 
+       }
+       else if(){
+
+       }
+       else{
+
+       }
+ 	Ex :
+
+let num = 11;
+
+
+if(num % 2 ===0){
+    console.log("This is a even Number");
+}
+else{
+    console.log("This is even number");   
+}
+
+
+      2 . switch(){
+
+          case :
+          break;
+
+      }
+Ex:
+
+let num = 10;
+
+
+switch(true){
+    case (num % 2 ===0):
+        console.log("This is even number");
+        break;
+    case (num % 2 ===1):
+        console.log("This is Odd number");
+        break;    
+
+
+}
+
+
+
+2. Data types :
+
+ I . Primitive:
+String   ("surya")
+Number (25)
+Boolean (true , false)
+Undefind 
+Null
+
+II . Reference:
+Abject {}
+Array []
+Fuction ()  {}
+ 
+
+3. Object
+
+    object_name{
+     key : value,
+}
+
+
+4. Array [];
+   insert a value    push();
+                     unshift();
+                     splice();
+   Delete a value    pop();
+                     shift();
+                     splice();
+
+5. Function name(){Declaration
+   }name()
+   let () = Function name(){Expression
+   }name()
+
+   ()=>{Arrow Function
+       }
+
+   let () = new function(condition);
+
+
+6. operators : 
+        >
+        <
+        <=
+        >=
+
+        + , - , * , / , %
+        ** , //
+
+        ===
+        !==
+
+7.logial operator:
+        && (and)
+        ||(or)
+        !(not)
+
+8.Ternary operator:
+        
+         let surya = (a >= 10)? "good" : "bad" ;
+
+9. call()
+
+tribble Object with connection
+ 
+ bind()
+ Apply()
+
+set time out
+set intervel      Both are syn and asyn  ( time change method)
+
+parseint("10.33")  result  =  10
+
+parseFloat("10.33")   result = 10.33
+
+
+Error handling
+   throw
+   try
+   catch
+
+
+default parameter ( num = 10 )
+
+set 
+get
+
+rest operator
+...surya(rest)
+
+
+spread operator
+
+...surya(object)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+
+
+
+
+
+  

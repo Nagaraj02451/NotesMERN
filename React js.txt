@@ -1,0 +1,76 @@
+React js 
+  
+   Components
+       Function component
+       Class component
+       
+
+JSX
+props
+state
+setstate
+Destructuring props and state
+Event handling
+Binding Event handlers
+methods as props   (push function as props)
+
+condition rendering
+    if / else
+    Element variables
+    Ternary condition operator
+    short circuit operator
+
+list rendering (map method)
+
+lists and key (index)
+
+css styling 3 ways
+   css stylesheets
+   inline styling
+   css modules
+   css in js libraries
+
+form handling
+fragment
+pure component
+lifecycle method
+Memo
+Refs
+   forward ref
+portals
+Error handling
+    fall back UI
+
+Higher order component
+render props
+context
+http  axios
+
+
+
+Hooks
+
+  
+
+  
+
+  
+
+ 
+
+
+
+
+
+   
+
+
+   
+  
+    
+
+       
+       
+       
+       
+       
